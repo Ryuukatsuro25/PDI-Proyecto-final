@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Coincidencia emocional entre obra y visitante: CNN para clasificar obras, YuNet + FER+ para gestos faciales, integrados en una sola lectura de valencia.">
+<meta name="theme-color" content="#F3F4F8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1230" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<title>Coincidencia emocional · Obra y visitante</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23232B5D'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='white' stroke-width='2.5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+<main class="wrap" id="contenido">
+  <header class="top">
+    <div>
+      <p class="eyebrow">Procesamiento Digital de Imágenes · UAO</p>
+      <h1>Coincidencia emocional entre obra y visitante</h1>
+      <p class="sub">Carga una obra, autoriza la cámara y obsérvala unos segundos. El sistema clasifica la obra con una CNN, extrae su paleta cromática, analiza tus gestos faciales y compara ambas lecturas.</p>
+    </div>
+    <div class="top-side">
+      <ul class="status" id="status" aria-label="Estado de los modelos">
+        <li data-k="cnn"><i></i>CNN de obras</li>
+        <li data-k="det"><i></i>Detector de rostro</li>
+        <li data-k="emo"><i></i>Emociones FER+</li>
+      </ul>
+      <button class="ghost small" id="btnAcerca">Acerca del modelo</button>
+    </div>
+  </header>
+
+  <div class="msg err banner" id="bannerServidor" role="alert" hidden></div>
+
+  <nav class="modos" role="tablist" aria-label="Modo de trabajo">
+    <button role="tab" id="tabVisitante" aria-selected="true" aria-controls="vistaVisitante">Obra y visitante <small>Sube una obra y usa la cámara</small></button>
+    <button role="tab" id="tabDataset" aria-selected="false" aria-controls="vistaDataset" tabindex="-1">Imágenes precargadas <small>Imágenes aleatorias de la carpeta del proyecto</small></button>
+  </nav>
+
+  <div id="vistaVisitante" role="tabpanel" aria-labelledby="tabVisitante" tabindex="0">
+  <ol class="stepper" id="stepper" aria-label="Progreso">
+    <li><strong>1 · Entrada</strong><span>Obra y cámara</span></li>
+    <li><strong>2 · Análisis</strong><span>Procesando</span></li>
+    <li><strong>3 · Excepciones</strong><span>Revisión</span></li>
+    <li><strong>4 · Resultado</strong><span>Comparación</span></li>
+  </ol>
+
+  <!-- ===================== PASO 1 ===================== -->
+  <section class="panel" id="paso1" aria-labelledby="t1">
+    <div class="panel-head">
+      <h2 id="t1">Entrada</h2>
+      <p class="lead">Necesitas al menos una de las dos entradas; con ambas se calcula la coincidencia emocional.</p>
+    </div>
+    <div class="grid2">
+      <!-- Obra -->
+      <div class="slot">
+        <div class="slot-head"><h3>Imagen de la obra</h3><span class="pill" id="pillObra">Pendiente</span></div>
+        <div class="drop" id="drop" tabindex="0" role="button" aria-label="Seleccionar imagen de la obra">
+          <div>
+            <svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M4 16l4-4 4 4 3-3 5 5M4 4h16v16H4zM15 8.5a1.5 1.5 0 1 0 0 .01"/></svg>
+            <p><b>Arrastra tu imagen aquí</b> o haz clic para elegirla</p>
+            <small>JPG o PNG, hasta 10 MB</small>
+          </div>
+        </div>
+        <input type="file" id="fileObra" accept="image/jpeg,image/png" hidden>
+        <div class="preview" id="prevObra" hidden><img id="imgObra" alt="Vista previa de la obra"></div>
+        <p class="meta" id="metaObra" hidden></p>
+        <div class="msg err" id="errObra" role="alert" hidden></div>
+        <div class="row"><button class="ghost" id="btnObraPrecargada" title="Elige al azar una imagen de la carpeta precarga-sin-analizar">Usar una imagen precargada</button><button id="btnQuitarObra" hidden>Quitar imagen</button></div>
+      </div>
+
+      <!-- Cámara -->
+      <div class="slot">
+        <div class="slot-head"><h3>Cámara · gestos faciales</h3><span class="pill" id="pillCam">Apagada</span></div>
+
+        <div class="consent" id="consent">
+          <label><input type="checkbox" id="chkConsent"> Autorizo el uso de la cámara para detectar mi rostro y analizar mis gestos durante la observación. Las imágenes se procesan en este equipo y no se guardan.</label>
+        </div>
+
+        <div class="cam" id="cam">
+          <div class="cam-off" id="camOff">
+            <svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M3 8h3l2-3h8l2 3h3v11H3zM12 17a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/></svg>
+            <span>Cámara apagada</span>
+          </div>
+          <div class="mirror"><video id="video" autoplay playsinline muted hidden></video></div>
+          <canvas id="overlay" aria-hidden="true"></canvas>
+          <div class="live-tag" id="liveTag" hidden><span class="dot"></span><span id="liveTxt">En vivo</span></div>
+        </div>
+
+        <div class="live" id="livePanel" hidden>
+          <div class="live-top">
+            <div><span class="k">Emoción actual</span><b id="liveEmo">—</b></div>
+            <div><span class="k">Rostro</span><b id="liveFace">—</b></div>
+            <div><span class="k">Calificación</span><b id="liveCalif">—</b></div>
+            <div><span class="k">Iluminación</span><b id="liveLuz">—</b></div>
+          </div>
+          <ul class="bars mini" id="liveBars"></ul>
+        </div>
+
+        <div class="opts" id="opts" hidden>
+          <label>Duración
+            <select id="selDur"><option value="3">3 s</option><option value="6" selected>6 s</option><option value="10">10 s</option></select>
+          </label>
+          <label class="chk"><input type="checkbox" id="chkMostrarObra" checked> Mostrar la obra en grande durante la observación</label>
+        </div>
+
+        <div class="frames" id="framesBox" hidden>
+          <div class="frames-head"><b id="framesTxt"></b><button class="link" id="btnDescartar">Descartar</button></div>
+          <div class="strip" id="strip"></div>
+        </div>
+
+        <div class="msg err" id="errCam" role="alert" hidden></div>
+        <div class="row">
+          <button id="btnCam" disabled>Activar cámara</button>
+          <button id="btnObservar" class="primary" hidden>Iniciar observación</button>
+          <button id="btnFoto" hidden>Foto única</button>
+          <button id="btnApagar" class="ghost" hidden>Detener cámara</button>
+        </div>
+      </div>
+    </div>
+    <div class="actions">
+      <span class="hint" id="hintAnalizar">Carga una obra o captura tu rostro para continuar.</span>
+      <button class="primary big" id="btnAnalizar" disabled>Confirmar y analizar</button>
+    </div>
+  </section>
+
+  <!-- ===================== PASO 2 ===================== -->
+  <section class="panel" id="paso2" aria-labelledby="t2" hidden>
+    <div class="panel-head">
+      <h2 id="t2">Análisis en curso</h2>
+      <p class="lead">Las imágenes recorren los módulos del sistema. Esto toma unos segundos.</p>
+    </div>
+    <div class="loading" role="status" aria-live="polite">
+      <div class="load-card"><div class="spinner"></div><b>Procesando obra…</b><span>CNN · paleta · Grad-CAM</span></div>
+      <div class="load-card"><div class="spinner"></div><b>Detectando rostro…</b><span>YuNet · FER+ · gestos</span></div>
+    </div>
+    <ol class="pipeline" id="pipeline"></ol>
+  </section>
+
+  <!-- ===================== PASO 3 ===================== -->
+  <section class="panel" id="paso3" aria-labelledby="t3" hidden>
+    <div class="panel-head">
+      <h2 id="t3">Excepciones</h2>
+      <p class="lead" id="leadExc"></p>
+    </div>
+    <ul class="exc-list" id="listaExc"></ul>
+    <div class="actions">
+      <button id="btnReintentar">Ajustar y reintentar</button>
+      <button class="primary" id="btnVerResultado">Ver resultado</button>
+    </div>
+  </section>
+
+  <!-- ===================== PASO 4 ===================== -->
+  <section class="panel" id="paso4" aria-labelledby="t4" hidden>
+    <div class="panel-head">
+      <h2 id="t4">Resultado</h2>
+      <p class="lead">Comparación entre la emoción que transmite la obra y la que expresa el visitante.</p>
+    </div>
+    <div class="result-grid">
+      <div class="rcard" id="rObra"></div>
+      <div class="gauge" id="gauge"></div>
+      <div class="rcard" id="rRostro"></div>
+    </div>
+    <div class="summary" id="resumen"></div>
+    <div class="exc-chips" id="excChips"></div>
+    <div class="details">
+      <article class="card" id="cardClasif"></article>
+      <article class="card" id="cardPaleta"></article>
+      <article class="card" id="cardEmociones"></article>
+      <article class="card" id="cardGestos"></article>
+      <article class="card wide" id="cardRostrosObra"></article>
+      <article class="card wide" id="cardTiempo"></article>
+      <article class="card wide" id="cardTiempos"></article>
+      <article class="card wide eval" id="cardEval" hidden>
+        <h3>Evaluación del sistema</h3>
+        <p class="meta">Para la prueba con visitantes. Responde después de ver el resultado. Se guardan tus respuestas y los valores numéricos del análisis; <b>no se guarda ninguna imagen</b>.</p>
+        <div class="eval-grid">
+          <label>Código del participante<input id="evPart" maxlength="20" placeholder="P01" autocomplete="off"></label>
+          <label>Obra<input id="evObra" maxlength="120" placeholder="nombre o código de la obra"></label>
+          <label>¿Qué emoción sentiste al mirar la obra?
+            <select id="evEmo">
+              <option value="">Selecciona…</option><option value="felicidad">Felicidad</option><option value="sorpresa">Sorpresa</option>
+              <option value="neutral">Ninguna en particular (neutral)</option><option value="tristeza">Tristeza</option>
+              <option value="miedo">Miedo</option><option value="enojo">Enojo</option><option value="asco">Asco</option><option value="desprecio">Desprecio</option>
+            </select></label>
+          <fieldset><legend>¿Qué te transmitió la obra?</legend>
+            <div class="likert" id="evVal">
+              <label><input type="radio" name="evVal" value="-2">Muy negativa</label><label><input type="radio" name="evVal" value="-1">Negativa</label>
+              <label><input type="radio" name="evVal" value="0">Neutra</label><label><input type="radio" name="evVal" value="1">Positiva</label>
+              <label><input type="radio" name="evVal" value="2">Muy positiva</label>
+            </div></fieldset>
+          <fieldset><legend>¿Qué tan de acuerdo estás con la coincidencia calculada?</legend>
+            <div class="likert" id="evAcu">
+              <label><input type="radio" name="evAcu" value="1">1 · Nada</label><label><input type="radio" name="evAcu" value="2">2</label>
+              <label><input type="radio" name="evAcu" value="3">3</label><label><input type="radio" name="evAcu" value="4">4</label>
+              <label><input type="radio" name="evAcu" value="5">5 · Totalmente</label>
+            </div></fieldset>
+          <label class="full">Comentario (opcional)<textarea id="evCom" maxlength="300" rows="2"></textarea></label>
+        </div>
+        <div class="row"><button class="primary" id="btnEval">Guardar respuesta</button><span class="hint" id="evMsg" aria-live="polite"></span></div>
+      </article>
+    </div>
+    <div class="actions noprint">
+      <button id="btnJSON">Descargar reporte (JSON)</button>
+      <button id="btnImprimir">Imprimir / guardar PDF</button>
+      <button id="btnVolverExc" hidden>Ver excepciones</button>
+      <button class="primary" id="btnNueva">Analizar otra obra</button>
+    </div>
+  </section>
+  </div><!-- /vistaVisitante -->
+
+  <!-- ===================== IMÁGENES PRECARGADAS ===================== -->
+  <section class="panel" id="vistaDataset" role="tabpanel" aria-labelledby="tabDataset" tabindex="0" hidden>
+    <div class="panel-head ds-head">
+      <div>
+        <h2>Explorar las imágenes precargadas</h2>
+        <p class="lead">Imágenes elegidas al azar de la carpeta <code>Proyecto-final-de-PDI / dataset usado / precarga-sin-analizar</code> del Google Drive del proyecto, para quien no quiera subir una imagen propia. Cada una pasa por el mismo análisis que una imagen subida: CNN, Grad-CAM, paleta, rostros, emociones y calificación del rostro.</p>
+      </div>
+      <p class="ds-estado" id="dsEstado" aria-live="polite">Consultando la carpeta de imágenes precargadas…</p>
+    </div>
+    <div class="ds-bar">
+      <label>Cantidad
+        <select id="dsN"><option>4</option><option selected>6</option><option>8</option><option>12</option></select>
+      </label>
+      <button class="primary" id="btnDsAleatorias">Obtener imágenes aleatorias</button>
+      <button id="btnDsAnalizarTodas" disabled>Analizar todas</button>
+      <label class="chk"><input type="checkbox" id="chkDsAuto" checked> Analizar al cargar</label>
+      <span class="sep"></span>
+      <button class="ghost" id="btnDsPropia">Analizar una imagen propia</button>
+      <input type="file" id="fileDsPropia" accept="image/jpeg,image/png" hidden>
+      <button class="ghost small" id="btnDsRecargar" title="Vuelve a leer la carpeta precarga-sin-analizar para incluir imágenes nuevas">Volver a leer la carpeta</button>
+    </div>
+    <div class="ds-error" id="dsError" role="alert" hidden></div>
+    <p class="ds-vacio" id="dsVacio">Pulsa «Obtener imágenes aleatorias» para elegir imágenes al azar de la carpeta <code>precarga-sin-analizar</code>. Si prefieres, usa «Analizar una imagen propia».</p>
+    <div class="ds-grid" id="dsGrid" aria-live="polite"></div>
+  </section>
+
+  <footer class="foot">Prototipo académico · Jose Gabriel Castañeda Uribe · Juan José Osorio Reyes · Procesamiento Digital de Imágenes, UAO 2026. Los resultados son exploratorios y no constituyen una evaluación psicológica.</footer>
+</main>
+
+<!-- Observación a pantalla completa -->
+<div class="observe" id="observe" hidden role="dialog" aria-modal="true" aria-labelledby="obsTitulo">
+  <div class="observe-inner">
+    <img id="obsImg" alt="Obra en observación">
+    <div class="obs-fallback" id="obsFallback" hidden>Mira hacia la cámara con naturalidad</div>
+    <div class="obs-count" id="obsCount" hidden></div>
+  </div>
+  <div class="obs-bar">
+    <div><b id="obsTitulo">Observa la obra</b><span id="obsSub">La cámara registra tu expresión.</span></div>
+    <div class="progress"><i id="obsProg"></i></div>
+    <button class="ghost light" id="btnCancelarObs">Cancelar (Esc)</button>
+  </div>
+</div>
+
+<!-- Acerca del modelo -->
+<dialog id="dlgAcerca" aria-labelledby="dlgT">
+  <div class="dlg-head"><h2 id="dlgT">Acerca del modelo</h2><button class="ghost small" id="btnCerrarDlg" aria-label="Cerrar">Cerrar</button></div>
+  <div id="dlgBody"><p>Cargando…</p></div>
+</dialog>
+
+<!-- Detalle de una imagen del dataset -->
+<dialog id="dlgDetalle" class="ancho" aria-labelledby="detT">
+  <div class="dlg-head"><h2 id="detT">Detalle del análisis</h2>
+    <div class="row"><button class="small" id="btnDetUsar">Usar con mi cámara</button><button class="small" id="btnDetJSON">JSON</button><button class="ghost small" id="btnCerrarDet">Cerrar</button></div>
+  </div>
+  <div id="detBody"></div>
+</dialog>
+
+<div class="tooltip" id="tooltip" role="tooltip" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>

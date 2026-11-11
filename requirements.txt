@@ -1,0 +1,14 @@
+# Versiones mínimas probadas. La sección 8 del notebook reescribe este archivo con las versiones exactas del entorno.
+torch>=2.2
+torchvision>=0.17
+numpy>=1.26
+pandas>=2.1
+scikit-learn>=1.4
+scipy>=1.11
+matplotlib>=3.8
+opencv-python>=4.8
+onnxruntime>=1.16
+pillow>=10.0
+fastapi>=0.110
+uvicorn>=0.27
+python-multipart>=0.0.9
