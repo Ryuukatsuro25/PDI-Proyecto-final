@@ -11,7 +11,7 @@ Sistema interactivo que clasifica el carácter emocional de una obra de arte con
 | 📘 Documentación técnica | [`docs/DOCUMENTACION.md`](docs/DOCUMENTACION.md) |
 | 🧭 Arquitectura | [`docs/arquitectura.md`](docs/arquitectura.md) |
 | 📊 Resultados | [`results/RESULTADOS.md`](results/RESULTADOS.md) |
-| 📁 Dataset (Google Drive) | **[COMPLETAR: enlace con permiso de lectura]** |
+| 📁 Dataset (Google Drive) | *[*https://drive.google.com/drive/folders/1paeP4lWNFA2-x0T6irA_UrRZ3m_i2y3n?usp=sharing]** |
 | 🎬 Video demostrativo (≤ 3 min) | **[COMPLETAR: enlace]** |
 | 🖼️ Póster | **[COMPLETAR: `docs/poster.pdf`]** |
 
