@@ -174,34 +174,6 @@
       <article class="card wide" id="cardRostrosObra"></article>
       <article class="card wide" id="cardTiempo"></article>
       <article class="card wide" id="cardTiempos"></article>
-      <article class="card wide eval" id="cardEval" hidden>
-        <h3>Evaluación del sistema</h3>
-        <p class="meta">Para la prueba con visitantes. Responde después de ver el resultado. Se guardan tus respuestas y los valores numéricos del análisis; <b>no se guarda ninguna imagen</b>.</p>
-        <div class="eval-grid">
-          <label>Código del participante<input id="evPart" maxlength="20" placeholder="P01" autocomplete="off"></label>
-          <label>Obra<input id="evObra" maxlength="120" placeholder="nombre o código de la obra"></label>
-          <label>¿Qué emoción sentiste al mirar la obra?
-            <select id="evEmo">
-              <option value="">Selecciona…</option><option value="felicidad">Felicidad</option><option value="sorpresa">Sorpresa</option>
-              <option value="neutral">Ninguna en particular (neutral)</option><option value="tristeza">Tristeza</option>
-              <option value="miedo">Miedo</option><option value="enojo">Enojo</option><option value="asco">Asco</option><option value="desprecio">Desprecio</option>
-            </select></label>
-          <fieldset><legend>¿Qué te transmitió la obra?</legend>
-            <div class="likert" id="evVal">
-              <label><input type="radio" name="evVal" value="-2">Muy negativa</label><label><input type="radio" name="evVal" value="-1">Negativa</label>
-              <label><input type="radio" name="evVal" value="0">Neutra</label><label><input type="radio" name="evVal" value="1">Positiva</label>
-              <label><input type="radio" name="evVal" value="2">Muy positiva</label>
-            </div></fieldset>
-          <fieldset><legend>¿Qué tan de acuerdo estás con la coincidencia calculada?</legend>
-            <div class="likert" id="evAcu">
-              <label><input type="radio" name="evAcu" value="1">1 · Nada</label><label><input type="radio" name="evAcu" value="2">2</label>
-              <label><input type="radio" name="evAcu" value="3">3</label><label><input type="radio" name="evAcu" value="4">4</label>
-              <label><input type="radio" name="evAcu" value="5">5 · Totalmente</label>
-            </div></fieldset>
-          <label class="full">Comentario (opcional)<textarea id="evCom" maxlength="300" rows="2"></textarea></label>
-        </div>
-        <div class="row"><button class="primary" id="btnEval">Guardar respuesta</button><span class="hint" id="evMsg" aria-live="polite"></span></div>
-      </article>
     </div>
     <div class="actions noprint">
       <button id="btnJSON">Descargar reporte (JSON)</button>

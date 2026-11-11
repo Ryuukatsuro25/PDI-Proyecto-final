@@ -5,7 +5,6 @@
      POST /api/frame      · POST /api/analizar
      GET  /api/dataset/estado | /api/dataset/aleatorias | /api/dataset/imagen
      POST /api/dataset/analizar | /api/dataset/recargar   (carpeta precarga-sin-analizar)
-     POST /api/evaluacion  (formulario de evaluación con visitantes)
    ===================================================================== */
 "use strict";
 
@@ -40,13 +39,13 @@ const MODULOS = [
 const ICONOS = { servidor:"🛠️", rostro_no_detectado:"🙈", formato:"🖼️", archivo_corrupto:"🧩", archivo_ausente:"📭",
   calidad_insuficiente:"🌫️", fuera_de_rango:"📏", no_reconocido:"❓", entrada_incompleta:"🧷", multiples_rostros:"👥",
   dataset_no_encontrado:"📁", dataset_no_disponible:"📭",
-  imagen_no_encontrada:"🔍", imagen_conocida:"🎓", camara:"📷", expresion_neutral:"😐" };
+  imagen_no_encontrada:"🔍", imagen_conocida:"🎓", camara:"📷" };
 const TITULOS = { servidor:"Error del servidor", rostro_no_detectado:"Rostro no detectado", formato:"Formato no soportado",
   archivo_corrupto:"Archivo dañado", archivo_ausente:"Archivo ausente", calidad_insuficiente:"Calidad de imagen insuficiente",
   fuera_de_rango:"Valor fuera de rango", no_reconocido:"Elemento no reconocido", entrada_incompleta:"Entrada incompleta",
   multiples_rostros:"Varias personas en cuadro", dataset_no_encontrado:"Carpeta de precarga no encontrada",
   dataset_no_disponible:"Carpeta de precarga vacía", imagen_no_encontrada:"Imagen no encontrada",
-  imagen_conocida:"Imagen conocida por la CNN", expresion_neutral:"Expresión mayormente neutral" };
+  imagen_conocida:"Imagen conocida por la CNN" };
 const gravedadCls = g => g === "error" ? "error" : g === "info" ? "info" : "aviso";
 
 const $ = id => document.getElementById(id);
@@ -611,7 +610,7 @@ function renderResultado() {
     rRo.append(el("div", "tag", "Rostro no detectado"));
   } else rRo.append(el("div", "vacio", "Sin rostro analizado."));
 
-  $("gauge").innerHTML = gaugeSVG(r.coincidencia, r.nivel_coincidencia) + escalaValencia(obra ? obra.valencia : null, ro ? (r.coincidencia_detalle ? r.coincidencia_detalle.valencia_visitante : ro.valencia) : null);
+  $("gauge").innerHTML = gaugeSVG(r.coincidencia, r.nivel_coincidencia) + escalaValencia(obra ? obra.valencia : null, ro ? ro.valencia : null);
   $("resumen").textContent = r.interpretacion || "";
   const chips = $("excChips"); chips.replaceChildren();
   r.excepciones.forEach(x => { const c = el("span", gravedadCls(x.gravedad), `${ICONOS[x.tipo] || "⚠️"} ${TITULOS[x.tipo] || "Aviso"}`); c.dataset.tip = esc(x.mensaje); chips.append(c); });
@@ -809,7 +808,7 @@ async function abrirAcerca() {
   const flujo = `<div class="flow"><span>ImageLoader</span><em>→</em><span>PreprocesamientoImagen</span><em>→</em><span>ClasificadorDeObras</span><em>+</em><span>ExtractorDePaleta</span></div>
     <div class="flow"><span>CámaraAutorizada</span><em>→</em><span>CapturaDeFrame</span><em>→</em><span>AnalizarGestosFaciales</span></div>
     <div class="flow"><em>→</em><span>ResultadoProceso</span><em>→</em><span>Integración</span><em>→</em><span>Presentación y uso</span></div>`;
-  let html = `<p>La obra se clasifica en <b>positiva</b> o <b>negativa</b> con la CNN de obras (ResNet18 con transfer learning); el rostro se detecta con YuNet y su expresión con FER+ (8 emociones). Ambas lecturas se llevan a una misma escala de <b>valencia</b> (−1 a +1) y la coincidencia es <code>1 − |v_obra − v_visitante| / 2</code>. Por defecto (fórmula v3) la valencia del visitante usa solo la parte <b>expresiva</b> del rostro, <code>v / (1 − p(neutral))</code>. Si la intensidad <code>1 − p(neutral)</code> es baja, el resultado se marca como poco concluyente.</p>
+  let html = `<p>La obra se clasifica en <b>positiva</b> o <b>negativa</b> con la CNN de obras (ResNet18 con transfer learning); el rostro se detecta con YuNet y su expresión con FER+ (8 emociones). Ambas lecturas se llevan a una misma escala de <b>valencia</b> (−1 a +1) y la coincidencia es <code>1 − |v_obra − v_visitante| / 2</code>.</p>
   <h3>Arquitectura</h3>${flujo}`;
   if (m) {
     const p = m.prueba, cm = p.matriz_confusion;
@@ -990,7 +989,7 @@ function pintarTarjeta(item) {
       <div><span>Emoción</span><b>${p && p.etiqueta ? `${p.etiqueta} ${pct(p.confianza)}` : "Sin rostro"}</b></div>
       <div><span>Calificación</span><b>${p && p.calificacion ? `${Math.round(p.calificacion.puntaje)} · ${p.calificacion.nivel}` : "—"}</b>
         ${p && p.calificacion ? `<div class="meter"><i style="width:${p.calificacion.puntaje}%"></i></div>` : ""}</div>
-      ${r.coherencia != null ? `<div class="full" data-tip="1 − |valencia de la obra − valencia expresiva del rostro| / 2"><span>Coherencia obra ↔ rostro</span><b>${pct(r.coherencia)} · ${r.nivel_coherencia}</b></div>` : ""}`;
+      ${r.coherencia != null ? `<div class="full" data-tip="1 − |valencia de la obra − valencia del rostro| / 2"><span>Coherencia obra ↔ rostro</span><b>${pct(r.coherencia)} · ${r.nivel_coherencia}</b></div>` : ""}`;
     body.append(g);
     const errores = r.excepciones.filter(x => x.gravedad === "error");
     if (errores.length) body.append(el("p", "ds-msg err", errores[0].mensaje));
@@ -1140,48 +1139,6 @@ $("btnDsRecargar").addEventListener("click", async () => {
   catch (e) { mostrarErrorDs(e.tipo ? e : { tipo: "servidor", mensaje: "No se pudo contactar al servidor." }); }
   finally { setCargando(btn, false); }
 });
-
-/* ============================================================ evaluación con visitantes */
-const EVAL_KEY = "pdi_eval_participante";
-function radioValor(nombre) { const x = document.querySelector(`input[name="${nombre}"]:checked`); return x ? x.value : ""; }
-function prepararEvaluacion() {
-  const r = state.resultado, card = $("cardEval");
-  const listo = !!(r && r.modo === "visitante" && r.obra && r.obra.categoria);
-  card.hidden = !listo;
-  if (!listo) return;
-  try { if (!$("evPart").value) $("evPart").value = localStorage.getItem(EVAL_KEY) || ""; } catch { /* almacenamiento no disponible */ }
-  $("evObra").value = state.obra && state.obra.name ? state.obra.name : "";
-  $("evEmo").value = ""; $("evCom").value = "";
-  document.querySelectorAll('input[name="evVal"], input[name="evAcu"]').forEach(x => { x.checked = false; });
-  $("evMsg").textContent = ""; $("btnEval").disabled = false;
-}
-function resultadoLiviano(r) {
-  // Quita imágenes (data URLs) y la línea de tiempo: el servidor solo guarda valores numéricos.
-  return JSON.parse(JSON.stringify(r, (k, v) => (typeof v === "string" && v.startsWith("data:")) || k === "linea_tiempo" ? undefined : v));
-}
-async function enviarEvaluacion() {
-  const btn = $("btnEval"), msg = $("evMsg");
-  const autorreporte = { participante: $("evPart").value.trim(), emocion: $("evEmo").value,
-    valencia_obra: radioValor("evVal"), acuerdo_coincidencia: radioValor("evAcu"), comentario: $("evCom").value.trim() };
-  if (!autorreporte.participante || !autorreporte.emocion || autorreporte.valencia_obra === "") {
-    msg.textContent = "Completa el código, la emoción y lo que te transmitió la obra."; return;
-  }
-  if (state.resultado.coincidencia != null && !autorreporte.acuerdo_coincidencia) {
-    msg.textContent = "Indica qué tan de acuerdo estás con la coincidencia."; return;
-  }
-  btn.disabled = true; msg.textContent = "Guardando…";
-  try {
-    const r = await fetch(API + "/api/evaluacion", { method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ autorreporte, obra_id: $("evObra").value.trim(), resultado: resultadoLiviano(state.resultado) }) });
-    const d = await r.json();
-    if (!r.ok || d.estado !== "ok") throw new Error((d.error && d.error.mensaje) || ("HTTP " + r.status));
-    try { localStorage.setItem(EVAL_KEY, autorreporte.participante); } catch { /* sin almacenamiento */ }
-    msg.textContent = `Respuesta guardada (${d.total} en total). ¡Gracias!`; toast("Evaluación guardada", "ok", 2500);
-  } catch (e) { msg.textContent = "No se pudo guardar: " + e.message; btn.disabled = false; }
-}
-$("btnEval").addEventListener("click", enviarEvaluacion);
-const _renderResultadoBase = renderResultado;
-renderResultado = function () { _renderResultadoBase(); prepararEvaluacion(); };
 
 /* ---------- inicio ---------- */
 cargarEstado();

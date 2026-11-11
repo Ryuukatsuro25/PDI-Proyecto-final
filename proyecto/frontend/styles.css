@@ -392,14 +392,3 @@ table.mini td.l{text-align:left}
   h1,h2,h3{color:#111}
   .tooltip{display:none !important}
 }
-/* ---------- evaluación con visitantes ---------- */
-.eval h3{margin:0 0 4px}
-.eval-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px 16px;margin:12px 0}
-.eval-grid label{display:flex;flex-direction:column;gap:4px;font-size:.9rem;color:var(--ink-soft)}
-.eval-grid input,.eval-grid select,.eval-grid textarea{font:inherit;color:var(--ink);background:var(--card);border:1.5px solid var(--line);border-radius:8px;padding:7px 9px}
-.eval-grid fieldset{border:1.5px solid var(--line);border-radius:8px;padding:8px 10px;margin:0;grid-column:1/-1}
-.eval-grid legend{font-size:.9rem;color:var(--ink-soft);padding:0 4px}
-.eval-grid .full{grid-column:1/-1}
-.likert{display:flex;flex-wrap:wrap;gap:6px 14px}
-.likert label{flex-direction:row;align-items:center;gap:6px;color:var(--ink)}
-@media print{#cardEval{display:none!important}}

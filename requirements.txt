@@ -1,10 +1,9 @@
-# Versiones mínimas probadas. La sección 8 del notebook reescribe este archivo con las versiones exactas del entorno.
+# Versiones mínimas. En Colab casi todo viene instalado; la primera celda del notebook instala lo que falte.
 torch>=2.2
 torchvision>=0.17
 numpy>=1.26
 pandas>=2.1
 scikit-learn>=1.4
-scipy>=1.11
 matplotlib>=3.8
 opencv-python>=4.8
 onnxruntime>=1.16

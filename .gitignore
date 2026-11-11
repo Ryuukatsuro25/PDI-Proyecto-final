@@ -1,12 +1,13 @@
-# Pesos y datos pesados: van en Google Drive / GitHub Releases
+# Datos y pesos pesados (van en Google Drive)
+dataset usado/
+proyecto/dataset usado/
+app_pdi/
 *.pt
 *.onnx
 *.npz
-app_pdi/
-dataset usado/
-evaluacion/videos/
-evaluacion/registros_visitantes.jsonl
-repo_export.zip
+*.zip
+# Entorno
 __pycache__/
 .ipynb_checkpoints/
+.venv/
 .DS_Store
