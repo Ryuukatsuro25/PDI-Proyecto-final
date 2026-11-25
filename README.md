@@ -18,8 +18,8 @@ Se enmarca en el eje temático *Análisis de la Expresión Humana en el Arte y l
 | 📊 Resultados y figuras de la ejecución entregada | [`proyecto/resultados_20261123_1926/`](proyecto/resultados_20261123_1926/) |
 | 🧠 Métricas, partición y umbral del modelo | [`proyecto/modelos_app/`](proyecto/modelos_app/) |
 | 📁 Dataset, modelos entrenados y fotos de evaluación | [Carpeta del proyecto en Google Drive](https://drive.google.com/drive/folders/1paeP4lWNFA2-x0T6irA_UrRZ3m_i2y3n?usp=sharing) |
-| 🎬 Video demostrativo (máximo 3 min) | Adjunto al repocitorio |
-| 🖼️ Póster académico | Adjunto al repocitorio |
+| 🎬 Video demostrativo (máximo 3 min) | Adjunto al repositorio |
+| 🖼️ Póster académico | Adjunto al repositorio |
 
 ### Resultados principales
 
