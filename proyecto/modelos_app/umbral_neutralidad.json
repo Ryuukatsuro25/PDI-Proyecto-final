@@ -1,0 +1,69 @@
+{
+ "umbral": 0.696,
+ "variante": "corregido",
+ "origen": "calibrado",
+ "fecha": 1795461916.863786,
+ "justificacion": "Variante «corregido» (AUC 0.82, 122 fotos del equipo). τ = 0.70 maximiza el índice de Youden: exactitud balanceada 77% con τ = 0.5 → 81% con τ calibrado.",
+ "auc": 0.818,
+ "conteo": {
+  "neutral": 60,
+  "no_neutral": 62
+ },
+ "metricas": {
+  "original": {
+   "tasa_deteccion": 1.0,
+   "n_evaluadas": 122,
+   "auc": 0.799,
+   "umbral_youden": 0.728,
+   "balanced_acc_05": 0.749,
+   "balanced_acc_youden": 0.781,
+   "matriz_confusion_youden": [
+    [
+     55,
+     5
+    ],
+    [
+     22,
+     40
+    ]
+   ]
+  },
+  "corregido": {
+   "tasa_deteccion": 1.0,
+   "n_evaluadas": 122,
+   "auc": 0.818,
+   "umbral_youden": 0.696,
+   "balanced_acc_05": 0.774,
+   "balanced_acc_youden": 0.814,
+   "matriz_confusion_youden": [
+    [
+     58,
+     2
+    ],
+    [
+     21,
+     41
+    ]
+   ],
+   "umbral_elegido": 0.696
+  },
+  "corregido_clahe": {
+   "tasa_deteccion": 1.0,
+   "n_evaluadas": 122,
+   "auc": 0.807,
+   "umbral_youden": 0.488,
+   "balanced_acc_05": 0.797,
+   "balanced_acc_youden": 0.814,
+   "matriz_confusion_youden": [
+    [
+     58,
+     2
+    ],
+    [
+     21,
+     41
+    ]
+   ]
+  }
+ }
+}

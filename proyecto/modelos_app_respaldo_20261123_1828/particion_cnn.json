@@ -1,0 +1,3205 @@
+{
+ "descripcion": "Partición usada para entrenar la CNN (nombre de archivo -> conjunto y clase)",
+ "archivos": {
+  "42456.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42458.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42459.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42461.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42462.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42463.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42464.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42465.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42466.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42467.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42469.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42470.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42471.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42472.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42473.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42479.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42480.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42481.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42483.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42484.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42485.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42486.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42487.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42488.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42489.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42490.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42492.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42493.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42495.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42496.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42497.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42498.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42499.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42500.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42501.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42502.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42504.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42505.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42506.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42507.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42509.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42510.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42512.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42514.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42515.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42516.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42517.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42518.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42519.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42520.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42523.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42524.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42525.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42526.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42527.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42528.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42529.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42530.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42533.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42534.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42536.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42540.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42541.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42542.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42543.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42544.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42545.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42548.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42549.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42550.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42551.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42552.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42553.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42555.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42556.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42557.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42559.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42560.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42561.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42562.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42564.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42565.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42566.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42567.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42568.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42571.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42573.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42574.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42575.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42576.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42578.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42579.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42580.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42581.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42582.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42585.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42586.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42587.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42588.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42589.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42591.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42593.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42594.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42595.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42596.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42599.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42600.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42601.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42602.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42603.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42604.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42605.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42956.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42957.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42958.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42959.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42960.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42961.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42964.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42965.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42966.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42967.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42968.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42969.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42970.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42971.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42972.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42973.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42975.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42977.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42978.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42979.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42980.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42981.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42982.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42983.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42984.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42986.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42988.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42990.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42991.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42993.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42994.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42996.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42997.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42998.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42999.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43000.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43002.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43003.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43004.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43005.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43006.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43007.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43008.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43009.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43011.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43012.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43013.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43015.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43018.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43019.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43020.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43021.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43023.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43025.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43027.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43028.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43029.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43030.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43031.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43033.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43034.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43035.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43036.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43037.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43038.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43039.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43040.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43042.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43043.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43044.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43045.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43047.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43048.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43049.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43050.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43051.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43052.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43053.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43054.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43055.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43057.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43058.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43059.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43060.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43061.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43062.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43063.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43065.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43066.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43067.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43068.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43069.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43070.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43071.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43072.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43073.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43074.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43075.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43076.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43077.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43078.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43079.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43080.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43081.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43082.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43083.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43084.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43086.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43087.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43089.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43090.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43091.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43094.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43095.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43096.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43097.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43098.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43099.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43100.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43101.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43102.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43103.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43105.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43106.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43107.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43108.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43109.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43110.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43111.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43112.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43113.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43114.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43115.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43116.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43117.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43118.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43119.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43120.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43121.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43122.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43124.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43125.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43126.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43127.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43128.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43131.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43133.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43134.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43135.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43136.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43138.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43139.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43140.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43141.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43142.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43143.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43144.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43145.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43146.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43149.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43150.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43151.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43153.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43154.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43156.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43157.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43158.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43160.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43161.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43162.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43163.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43165.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43166.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43168.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43169.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43170.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43171.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43172.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43173.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43174.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43175.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43176.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43177.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43178.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43179.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43180.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43181.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43182.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43183.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43184.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43186.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43187.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43189.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43190.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43191.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43192.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43193.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43194.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43196.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43197.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43198.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43199.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43200.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43201.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43202.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43203.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43204.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "43205.jpg": {
+   "particion": "entrenamiento",
+   "clase": "negativo"
+  },
+  "42306.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42307.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42308.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42310.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42311.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42312.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42313.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42314.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42315.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42316.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42317.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42320.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42323.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42324.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42325.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42326.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42327.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42330.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42331.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42332.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42333.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42334.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42335.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42336.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42337.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42338.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42339.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42340.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42342.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42343.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42344.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42345.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42347.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42348.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42349.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42351.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42352.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42354.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42356.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42359.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42360.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42361.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42362.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42364.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42365.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42366.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42367.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42368.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42370.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42371.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42372.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42373.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42374.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42375.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42376.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42378.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42379.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42380.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42381.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42382.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42383.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42384.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42386.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42388.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42390.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42391.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42392.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42393.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42394.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42395.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42396.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42397.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42398.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42399.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42400.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42401.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42402.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42403.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42405.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42406.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42408.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42409.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42410.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42411.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42412.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42414.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42415.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42419.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42421.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42423.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42424.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42426.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42427.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42428.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42429.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42430.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42432.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42433.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42434.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42435.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42436.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42437.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42438.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42439.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42440.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42442.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42443.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42444.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42445.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42447.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42449.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42450.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42451.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42452.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42453.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42455.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43207.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43208.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43209.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43210.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43211.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43212.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43213.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43214.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43215.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43216.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43217.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43218.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43219.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43220.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43221.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43222.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43223.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43224.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43225.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43226.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43227.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43229.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43231.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43233.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43234.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43235.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43236.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43238.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43240.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43243.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43244.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43246.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43247.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43248.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43251.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43252.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43253.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43254.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43255.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43256.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43257.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43258.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43259.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43260.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43261.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43262.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43263.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43264.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43265.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43266.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43267.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43268.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43269.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43271.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43273.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43274.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43275.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43276.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43277.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43278.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43279.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43280.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43281.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43282.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43283.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43284.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43286.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43287.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43289.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43290.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43292.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43293.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43294.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43295.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43296.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43297.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43298.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43299.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43300.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43301.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43302.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43303.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43304.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43305.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43306.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43307.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43308.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43309.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43310.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43311.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43312.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43313.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43315.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43316.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43317.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43318.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43319.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43320.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43321.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43322.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43323.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43324.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43325.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43326.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43327.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43328.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43329.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43331.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43332.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43333.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43334.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43336.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43337.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43339.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43340.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43341.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43342.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43344.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43345.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43346.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43347.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43348.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43349.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43350.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43352.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43353.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43354.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43355.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43356.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43359.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43360.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43361.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43362.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43363.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43366.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43367.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43368.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43369.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43370.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43371.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43373.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43374.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43375.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43376.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43378.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43379.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43380.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43381.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43382.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43384.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43385.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43386.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43387.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43389.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43390.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43391.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43392.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43393.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43394.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43395.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43396.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43397.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43399.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43400.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43401.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43403.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43404.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43405.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43406.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43407.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43408.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43410.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43411.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43412.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43414.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43416.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43417.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43418.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43419.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43420.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43423.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43424.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43425.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43426.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43428.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43429.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43430.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43431.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43432.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43434.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43436.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43438.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43439.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43441.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43442.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43445.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43447.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43448.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43449.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43450.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43451.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43453.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43454.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "43455.jpg": {
+   "particion": "entrenamiento",
+   "clase": "positivo"
+  },
+  "42468.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "42475.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "42491.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "42508.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "42511.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "42535.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "42537.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "42539.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "42546.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "42547.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "42554.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "42558.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "42569.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "42570.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "42572.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "42577.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "42583.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "42592.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "42598.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "42962.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "42974.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "42985.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "42987.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "43001.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "43010.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "43014.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "43016.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "43017.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "43041.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "43046.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "43092.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "43123.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "43129.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "43137.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "43147.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "43148.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "43152.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "43155.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "43164.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "43195.jpg": {
+   "particion": "validacion",
+   "clase": "negativo"
+  },
+  "42328.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "42329.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "42341.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "42346.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "42355.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "42357.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "42369.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "42385.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "42389.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "42404.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "42413.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "42416.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "42422.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "42441.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "42454.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "43206.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "43228.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "43232.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "43237.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "43239.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "43241.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "43242.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "43245.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "43249.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "43250.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "43288.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "43291.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "43330.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "43338.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "43351.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "43365.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "43372.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "43377.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "43398.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "43409.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "43421.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "43427.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "43437.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "43444.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "43446.jpg": {
+   "particion": "validacion",
+   "clase": "positivo"
+  },
+  "42457.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "42460.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "42474.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "42476.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "42477.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "42478.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "42482.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "42494.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "42503.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "42513.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "42521.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "42522.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "42531.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "42532.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "42538.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "42563.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "42584.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "42590.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "42597.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "42963.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "42976.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "42989.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "42992.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "42995.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "43022.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "43024.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "43026.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "43032.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "43056.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "43064.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "43085.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "43088.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "43093.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "43104.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "43130.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "43132.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "43159.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "43167.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "43185.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "43188.jpg": {
+   "particion": "prueba",
+   "clase": "negativo"
+  },
+  "42309.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "42318.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "42319.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "42321.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "42322.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "42350.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "42353.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "42358.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "42363.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "42377.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "42387.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "42407.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "42417.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "42418.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "42420.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "42425.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "42431.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "42446.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "42448.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "43230.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "43270.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "43272.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "43285.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "43314.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "43335.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "43343.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "43357.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "43358.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "43364.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "43383.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "43388.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "43402.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "43413.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "43415.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "43422.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "43433.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "43435.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "43440.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "43443.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  },
+  "43452.jpg": {
+   "particion": "prueba",
+   "clase": "positivo"
+  }
+ }
+}

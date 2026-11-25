@@ -1,0 +1,128 @@
+{
+  "modelo": "ResNet-18 preentrenada (ImageNet, conv1–layer2 congeladas) + Dropout 0.5 + Weight Decay 1e-4 + Early Stopping (paciencia 5)",
+  "arquitectura": "resnet18",
+  "filtros_pdi": false,
+  "mejor_epoca": 4,
+  "prueba": {
+    "accuracy": 0.75,
+    "precision": 0.75,
+    "recall": 0.75,
+    "f1": 0.75,
+    "matriz_confusion": [
+      [
+        30,
+        10
+      ],
+      [
+        10,
+        30
+      ]
+    ],
+    "n": 80
+  },
+  "historial": {
+    "train_loss": [
+      0.7151,
+      0.5989,
+      0.459,
+      0.3381,
+      0.2229,
+      0.1715,
+      0.159,
+      0.2205,
+      0.1257
+    ],
+    "val_loss": [
+      0.6428,
+      0.6393,
+      0.624,
+      0.5635,
+      0.7545,
+      0.7226,
+      0.856,
+      0.8489,
+      0.8325
+    ],
+    "train_acc": [
+      0.5437,
+      0.6844,
+      0.8141,
+      0.8578,
+      0.9203,
+      0.9406,
+      0.9422,
+      0.9062,
+      0.9594
+    ],
+    "val_acc": [
+      0.6875,
+      0.675,
+      0.6625,
+      0.6875,
+      0.6375,
+      0.7125,
+      0.6625,
+      0.6375,
+      0.6375
+    ]
+  },
+  "particion": {
+    "entrenamiento": 640,
+    "validacion": 80,
+    "prueba": 80
+  },
+  "fuente": "Google Drive (/content/drive/MyDrive/Proyecto Final PDI VERSION 3/dataset usado)",
+  "media": [
+    0.4402025043964386,
+    0.3810642957687378,
+    0.3228994309902191
+  ],
+  "std": [
+    0.27010661363601685,
+    0.2584490478038788,
+    0.2505767345428467
+  ],
+  "fecha": 1795458552.8696291,
+  "ablacion": {
+    "con_filtros": {
+      "val_loss": 0.571,
+      "prueba": {
+        "accuracy": 0.75,
+        "precision": 0.778,
+        "recall": 0.7,
+        "f1": 0.737,
+        "matriz_confusion": [
+          [
+            32,
+            8
+          ],
+          [
+            12,
+            28
+          ]
+        ],
+        "n": 80
+      }
+    },
+    "sin_filtros": {
+      "val_loss": 0.5635,
+      "prueba": {
+        "accuracy": 0.75,
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75,
+        "matriz_confusion": [
+          [
+            30,
+            10
+          ],
+          [
+            10,
+            30
+          ]
+        ],
+        "n": 80
+      }
+    }
+  }
+}

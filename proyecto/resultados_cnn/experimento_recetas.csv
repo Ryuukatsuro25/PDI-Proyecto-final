@@ -1,0 +1,9 @@
+receta,tta,mejor_epoca,accuracy,accuracy_std_folds,f1,auc,train_loss,val_loss,brecha,segundos,brecha_ok
+regularizada,True,15,0.724,0.05,0.715,0.801,0.4413,0.5381,0.0968,6008.0,True
+regularizada,False,15,0.712,0.047,0.702,0.799,0.4413,0.5381,0.0968,6008.0,True
+layer3_layer4,False,14,0.7,0.048,0.694,0.787,0.4935,0.5498,0.0563,6713.2,True
+layer3_layer4,True,14,0.696,0.053,0.69,0.786,0.4935,0.5498,0.0563,6713.2,True
+solo_cabeza,True,15,0.686,0.016,0.696,0.75,0.6065,0.5964,-0.0101,4632.4,True
+solo_cabeza,False,15,0.678,0.022,0.689,0.743,0.6065,0.5964,-0.0101,4632.4,True
+base,False,6,0.75,0.04,0.757,0.85,0.1817,0.5366,0.3549,3769.4,False
+base,True,6,0.746,0.031,0.754,0.846,0.1817,0.5366,0.3549,3769.4,False
