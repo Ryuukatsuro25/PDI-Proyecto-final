@@ -18,8 +18,9 @@ Se enmarca en el eje temático *Análisis de la Expresión Humana en el Arte y l
 | 📊 Resultados y figuras de la ejecución entregada | [`proyecto/resultados_20261123_1926/`](proyecto/resultados_20261123_1926/) |
 | 🧠 Métricas, partición y umbral del modelo | [`proyecto/modelos_app/`](proyecto/modelos_app/) |
 | 📁 Dataset, modelos entrenados y fotos de evaluación | [Carpeta del proyecto en Google Drive](https://drive.google.com/drive/folders/1paeP4lWNFA2-x0T6irA_UrRZ3m_i2y3n?usp=sharing) |
-| 🎬 Video demostrativo (máximo 3 min) | Adjunto al repositorio |
-| 🖼️ Póster académico | Adjunto al repositorio |
+| 🎬 Video demostrativo (máximo 3 min) | [`WhatsApp Video 2026-11-25 at 2.07.26 AM.mp4`](WhatsApp%20Video%202026-11-25%20at%202.07.26%20AM.mp4) |
+| 🖼️ Póster académico | [`Despliegue web (1).pdf`](Despliegue%20web%20%281%29.pdf) |
+| 🧑 Fotos de evaluación de la neutralidad facial | [`proyecto/rostros_eval/`](proyecto/rostros_eval/) |
 
 ### Resultados principales
 
@@ -30,7 +31,7 @@ Se enmarca en el eje temático *Análisis de la Expresión Humana en el Arte y l
 | Precision · Recall · F1 | 0.750 · 0.750 · **0.750** |
 | ¿Es mejor que el azar? (prueba binomial) | Sí: p < 0.0001 |
 | Línea base: CNN de 3 bloques entrenada desde cero | Accuracy 0.600 (IC 95 % de 0.49 a 0.70) · F1 0.556 |
-| Neutralidad facial, con fotos del equipo no usadas para calibrar (37) | AUC **0.801** · exactitud balanceada **0.816** con τ = 0.70 |
+| Neutralidad facial, con fotos de prueba no usadas para calibrar (37) | AUC **0.801** · exactitud balanceada **0.816** con τ = 0.70 |
 | Agrupamiento no supervisado frente a las etiquetas | ARI = 0.013: los grupos visuales no reproducen la emoción |
 
 ---
@@ -78,7 +79,7 @@ Diseñar, implementar y evaluar un sistema interactivo de procesamiento digital 
 1. Construir y validar un dataset propio de 1 100 obras: 400 positivas, 400 negativas y 300 sin etiqueta.
 2. Aplicar filtrado espacial (mediana), filtrado en frecuencia (homomórfico) y normalización estadística, y medir su efecto en la clasificación.
 3. Entrenar y evaluar una CNN con accuracy, precision, recall, F1, matriz de confusión, intervalos de confianza y una prueba estadística frente al azar, y compararla con una línea base.
-4. Detectar rostros y decidir si su expresión es neutral o no neutral, con un umbral calibrado y evaluado con **fotos reales capturadas por el equipo**.
+4. Detectar rostros y decidir si su expresión es neutral o no neutral, con un umbral calibrado y evaluado con **fotografías reales de personas, previamente registradas** (datos externos al dataset de obras).
 5. Integrar todo en una interfaz gráfica con manejo de excepciones y documentarlo en este repositorio.
 
 ### Solución propuesta
@@ -186,7 +187,7 @@ sequenceDiagram
 | `ExtractorDePaleta` | Imagen RGB | 6 colores (HEX, nombre, proporción), brillo, saturación, calidez | K-means en CIE Lab |
 | `AnalizarGestosFaciales` | Imagen RGB | Rostros con caja, puntos, 8 emociones, neutralidad, gestos y calificación (0–100) | YuNet; recorte cuadrado con relleno y alineado por los ojos; FER+ sobre 64×64 en gris |
 | `ResultadoProceso` | Salidas de los módulos | Resultado validado y excepciones | Umbrales de confianza, rostro principal = el más grande, seguimiento por IoU ≥ 0.3, calidad (brillo y nitidez) |
-| `calibrar_neutralidad` | Fotos del equipo (`rostros_eval/`) | τ, recorte elegido, AUC, exactitud balanceada | Curva ROC e índice de Youden; AUC mínimo de 0.6 |
+| `calibrar_neutralidad` | Fotos etiquetadas neutral / no neutral (`rostros_eval/`) | τ, recorte elegido, AUC, exactitud balanceada | Curva ROC e índice de Youden; AUC mínimo de 0.6 |
 | `agrupar_imagenes` | Lista de obras | k, silueta, ARI, grupos y obras representativas | Histograma HSV, GLCM, Sobel/Laplaciano y características de la CNN → PCA → K-means |
 | `Sistema` | Peticiones de la API | Respuestas JSON | Integra todos los módulos y mide el tiempo de cada uno |
 
@@ -205,7 +206,7 @@ sequenceDiagram
 | 7. Explicabilidad | **Grad-CAM** sobre el último bloque convolucional y **paleta cromática** | Muestra qué zonas y qué colores pesaron |
 | 8. Exploración no supervisada | Color (histograma HSV), textura (**GLCM**), bordes (Sobel, Laplaciano) y características de la CNN → PCA → **K-means** con k elegido por silueta; ARI frente a las etiquetas | Comprueba si la apariencia por sí sola separa las clases |
 | 9. Rostros | **YuNet** (caja + 5 puntos faciales) → recorte cuadrado con relleno y **alineado por los ojos** → **FER+** (8 emociones) → **neutral si P(neutral) ≥ τ** | Reglas para sin rostro, varios rostros y seguimiento entre fotogramas (IoU ≥ 0.3) |
-| 10. Calibración facial | 122 fotos reales del equipo capturadas con la cámara del aplicativo; τ por **índice de Youden**; **evaluación independiente** 70 % / 30 % | AUC y exactitud balanceada |
+| 10. Calibración facial | 122 fotografías reales de personas, previamente registradas y etiquetadas neutral / no neutral; τ por **índice de Youden**; **evaluación independiente** 70 % / 30 % | AUC y exactitud balanceada |
 | 11. Integración | API FastAPI + interfaz web. Valencia de la obra = P(positivo) − P(negativo). Valencia del rostro = Σ P(emoción)·valencia(emoción). **Coincidencia = 1 − \|v<sub>obra</sub> − v<sub>rostro</sub>\| / 2** | Excepciones con mensajes comprensibles |
 
 ---
@@ -252,7 +253,7 @@ PDI-Proyecto-final/
 | `GET /api/dataset/estado` · `GET /api/dataset/aleatorias` · `GET /api/dataset/imagen` | Obras precargadas |
 | `POST /api/dataset/analizar` · `POST /api/dataset/predecir` | Análisis o predicción sobre una precargada |
 | `POST /api/agrupamiento` | Agrupamiento no supervisado de las precargadas |
-| `GET /api/rostros/estado` · `POST /api/rostros/guardar` · `POST /api/rostros/calibrar` | Fotos del equipo para la neutralidad y calibración de τ |
+| `GET /api/rostros/estado` · `POST /api/rostros/guardar` · `POST /api/rostros/calibrar` | Fotos etiquetadas para la neutralidad y calibración de τ |
 
 ### Fórmulas
 
@@ -315,11 +316,16 @@ Las imágenes fueron **recopiladas por el equipo** a partir de obras de arte pub
 | `Positivo` | 400 | 0 | Entrenamiento 320 · validación 40 · prueba 40 |
 | `Negativo` | 400 | 0 | Entrenamiento 320 · validación 40 · prueba 40 |
 | `Precarga sin analizar` | 300 | 0 | Consulta en la GUI y agrupamiento |
-| Fotos del equipo (`rostros_eval/`) | 60 neutrales · 62 no neutrales | — | Calibración y evaluación de la neutralidad facial |
+| Fotos de evaluación facial (`rostros_eval/`) | 60 neutrales · 62 no neutrales | — | Calibración y evaluación de la neutralidad facial |
 
 - **Partición:** estratificada, con semilla 42. El detalle por archivo está en [`proyecto/modelos_app/particion_cnn.json`](proyecto/modelos_app/particion_cnn.json).
 - **Normalización del modelo entregado:** media RGB (0.440, 0.381, 0.323) y desviación (0.270, 0.258, 0.251), calculadas solo con el conjunto de entrenamiento.
-- **Fotos del equipo:** las capturaron los integrantes con la cámara del propio aplicativo, con los botones «Guardar como neutral» y «Guardar como no neutral».
+- **Fotos de evaluación facial:** no son fotos de los integrantes ni se capturaron con el aplicativo. Son **122 fotografías reales de personas, previamente registradas**, de un conjunto de expresiones faciales *genuinas* (no actuadas), tomadas con cámara de celular (4032 × 3024 px). Cumplen el objetivo de evaluar con «datos reales, previamente registrados o capturados por el equipo».
+    - `neutral/`: 60 fotos (`Neutral_Genuine_*`).
+    - `no_neutral/`: 62 fotos: felicidad 14, asco 10, miedo 10, tristeza 10, sorpresa 10 y enojo 8.
+    - La etiqueta neutral / no neutral sale de la emoción indicada en el nombre de cada archivo del conjunto original.
+    - <!-- Agregar aquí el nombre y el enlace del conjunto de origen. -->
+- **Captura desde el aplicativo:** la interfaz también permite agregar fotos propias con los botones «Guardar como neutral» y «Guardar como no neutral», que se guardan en `rostros_eval/` y entran en la siguiente calibración.
 
 **Acceso:** el dataset, los pesos de los modelos y las fotos de evaluación están en la [carpeta del proyecto en Google Drive](https://drive.google.com/drive/folders/1paeP4lWNFA2-x0T6irA_UrRZ3m_i2y3n?usp=sharing):
 
@@ -330,7 +336,7 @@ Proyecto Final PDI VERSION 3/            (Google Drive)
 │   ├── Negativo/                400 obras
 │   └── Precarga sin analizar/   300 obras sin etiqueta
 ├── modelos_app/                 cnn_obras.pt (ResNet-18), métricas, partición, umbral, YuNet y FER+
-├── rostros_eval/                fotos del equipo (neutral / no_neutral)
+├── rostros_eval/                fotos de evaluación facial (neutral / no_neutral)
 └── interfaz/                    index.html · styles.css · app.js
 ```
 
@@ -369,7 +375,7 @@ El diseño partió de dos flujos:
 | 4. Resultado | Categoría de la obra y su probabilidad; Grad-CAM y regiones; paleta; rostros de la obra; emoción y neutralidad del visitante; coincidencia emocional; línea de tiempo y tiempos por módulo. Se puede exportar a JSON o PDF |
 | **Datos, análisis y predicción · 1. Fuente** | Cargar y validar una carpeta local o de Google Drive; ver el resumen por grupo y los archivos descartados; reentrenar la CNN |
 | 2. Precargadas | Mostrar obras al azar y analizarlas con el mismo flujo; agruparlas sin supervisión |
-| 3. Predicción | Subir una imagen y obtener, por rostro, la decisión neutral / no neutral con su probabilidad y el umbral activo, además de la categoría de la obra; calibrar el umbral con las fotos del equipo |
+| 3. Predicción | Subir una imagen y obtener, por rostro, la decisión neutral / no neutral con su probabilidad y el umbral activo, además de la categoría de la obra; calibrar el umbral con las fotos de `rostros_eval/` |
 | Acerca del modelo | Arquitectura, métricas en prueba, matriz de confusión y curva de pérdida |
 
 ### Instrucciones de uso
@@ -379,7 +385,19 @@ El diseño partió de dos flujos:
 3. **Comparar con tu expresión:** marca el consentimiento, pulsa **Activar cámara** y luego **Iniciar observación**. Mira la obra durante los segundos elegidos, pulsa **Confirmar y analizar** y revisa la coincidencia.
 4. **Predecir sobre una imagen nueva:** en «Datos, análisis y predicción» → «Predicción», sube una foto o una obra.
 5. **Explorar el dataset:** usa **Mostrar precargadas al azar** o **Agrupar precargadas**.
-6. **Calibrar la neutralidad:** con la cámara encendida, usa **Guardar como neutral / no neutral** y después **Calibrar umbral con mis fotos**.
+6. **Calibrar la neutralidad:** con la cámara encendida, usa **Guardar como neutral / no neutral** para agregar fotos y después **Calibrar umbral con mis fotos**. La calibración usa todas las fotos de `rostros_eval/`.
+
+### Evidencias visuales
+
+Capturas del aplicativo en funcionamiento:
+
+| | |
+|---|---|
+| ![Captura 1](docs/gui/WhatsApp%20Image%202026-11-25%20at%202.07.55%20AM.jpeg) | ![Captura 2](docs/gui/WhatsApp%20Image%202026-11-25%20at%202.07.55%20AM%20%281%29.jpeg) |
+| ![Captura 3](docs/gui/WhatsApp%20Image%202026-11-25%20at%202.07.55%20AM%20%282%29.jpeg) | ![Captura 4](docs/gui/WhatsApp%20Image%202026-11-25%20at%202.07.55%20AM%20%283%29.jpeg) |
+| ![Captura 5](docs/gui/WhatsApp%20Image%202026-11-25%20at%202.07.55%20AM%20%284%29.jpeg) | ![Captura 6](docs/gui/WhatsApp%20Image%202026-11-25%20at%202.07.55%20AM%20%285%29.jpeg) |
+
+El video demostrativo muestra el flujo completo: [`WhatsApp Video 2026-11-25 at 2.07.26 AM.mp4`](WhatsApp%20Video%202026-11-25%20at%202.07.26%20AM.mp4).
 
 ### Ejemplo de análisis
 
@@ -465,9 +483,9 @@ Obras más representativas de cada grupo:
 
 ![Obras representativas de cada grupo](proyecto/resultados_20261123_1926/09_Obras_m%C3%A1s_representativas_de_cada_grupo_precargada.png)
 
-### 7.4 Neutralidad facial con fotos del equipo
+### 7.4 Neutralidad facial con fotografías reales
 
-Se usaron 122 fotos capturadas por el equipo con el aplicativo: 60 neutrales y 62 no neutrales. En todas se detectó el rostro.
+Se usaron 122 fotografías reales de personas, previamente registradas (ver la sección 5): 60 neutrales y 62 no neutrales. En todas se detectó el rostro.
 
 | Recorte facial | AUC | τ (Youden) | Exactitud balanceada con τ = 0.5 | Exactitud balanceada con τ de Youden |
 |---|---|---|---|---|
@@ -518,7 +536,7 @@ ROC de la decisión neutral / no neutral (todas las fotos):
 
 - **Prueba pequeña y una sola partición:** con 80 obras, el IC 95 % de la accuracy mide unos 19 puntos de ancho.
 - **Etiquetas subjetivas:** las 800 obras las etiquetó el mismo equipo con un criterio binario; no se midió el acuerdo entre anotadores.
-- **Evaluación facial limitada:** 37 fotos de prueba, solo de los integrantes del equipo. Los errores se concentran en expresiones no neutrales sutiles (7 de 19 se tomaron como neutrales).
+- **Evaluación facial limitada:** 37 fotos de prueba de pocas personas, tomadas en interiores y con condiciones de luz parecidas; no se probó con visitantes en un museo. Los errores se concentran en expresiones no neutrales sutiles (7 de 19 se tomaron como neutrales).
 - **Dominio de los modelos faciales:** YuNet y FER+ se entrenaron con fotografías. En pinturas pueden aparecer rostros no detectados o falsos; cada detección muestra su puntaje y su calificación.
 - **Expresión no es emoción:** el sistema mide la expresión visible, no lo que la persona siente.
 
@@ -528,6 +546,7 @@ ROC de la decisión neutral / no neutral (todas las fotos):
 - Reportar validación cruzada en la versión final, con la media y la desviación de cada métrica.
 - Probar arquitecturas más recientes (EfficientNet, ViT) y calibrar las probabilidades de la CNN.
 - Entrenar un reconocedor de expresiones con rostros pintados, no solo fotografías.
+- Ampliar la evaluación facial con fotos capturadas en el propio aplicativo y en condiciones reales de exhibición.
 - Validar con visitantes reales, comparando lo que detecta el sistema con lo que las personas reportan.
 
 ---
